@@ -33,3 +33,4 @@ base <- ggplot(
   theme(panel.background = element_rect(fill = "#aaaaaa"))
 
 plot(base + with_halftone_dither(geom_segment()))
+

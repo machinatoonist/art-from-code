@@ -6,9 +6,9 @@ library(flametree)
 library(ggfx)
 
 tree <- flametree_grow(
-  seed = 1, 
-  time = 9, 
-  angle = c(-15, 15, 30)
+  seed = 2022, 
+  time = 10, 
+  angle = c(-15, 5, 30)
 )
 
 leaf <- tree |> filter(id_leaf == TRUE)
@@ -39,3 +39,4 @@ plot(
     trunk + 
     with_outer_glow(leaves, colour = "#555555", sigma = 5, expand = 3)
 )
+
